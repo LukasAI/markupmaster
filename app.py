@@ -32,7 +32,7 @@ if cogs_input > 0:
     sek_price = 100  # Start at a reasonable low price
     while True:
         metrics = calculate_metrics(cogs_input, sek_price)
-        if metrics["Markup"] >= 2.5:
+        if metrics["Markup"] >= 2.8:
             results.append(metrics)
         if metrics["Markup"] >= 5.0:
             break
